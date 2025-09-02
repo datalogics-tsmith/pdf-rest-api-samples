@@ -7,5 +7,5 @@ DELETE_URL="https://api.pdfrest.com/resource"
 # For more information visit https://pdfrest.com/pricing#how-do-eu-gdpr-api-calls-work
 #DELETE_URL="https://eu-api.pdfrest.com/resource"
 
-curl --request DELETE "{$DELETE_URL}/xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" \
+curl --request DELETE "$DELETE_URL/xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" \
 --header 'Api-Key: xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx' \

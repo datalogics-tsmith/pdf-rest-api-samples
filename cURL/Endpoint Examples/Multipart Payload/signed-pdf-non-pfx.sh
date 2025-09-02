@@ -1,6 +1,13 @@
+# By default, we use the US-based API service. This is the primary endpoint for global use.
+SIGN_URL="https://api.pdfrest.com/signed-pdf"
+
+# For GDPR compliance and enhanced performance for European users, you can switch to the EU-based service by uncommenting the URL below.
+# For more information visit https://pdfrest.com/pricing#how-do-eu-gdpr-api-calls-work
+#SIGN_URL="https://eu-api.pdfrest.com/signed-pdf"
+
 SIGNATURE_CONFIG='{"type": "new","name": "esignature","location": {"bottom_left": { "x": "0", "y": "0" },"top_right": { "x": "216", "y": "72" },"page": 1},"display": {"include_datetime": "true"}}'
 
-curl -X POST "https://api.pdfrest.com/signed-pdf" \
+curl -X POST $SIGN_URL \
   -H "Accept: application/json" \
   -H "Content-Type: multipart/form-data" \
   -H "Api-Key: xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" \

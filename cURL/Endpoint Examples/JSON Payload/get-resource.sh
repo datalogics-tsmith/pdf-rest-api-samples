@@ -6,4 +6,4 @@ GET_URL="https://api.pdfrest.com/resource"
 #GET_URL="https://eu-api.pdfrest.com/resource"
 
 
-curl -X GET "{$GET_URL}/xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx?format=url"
+curl -X GET "$GET_URL/xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx?format=url"
