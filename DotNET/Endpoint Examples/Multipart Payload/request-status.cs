@@ -9,7 +9,13 @@ using Newtonsoft.Json.Linq;
 public class PollableApiExample
 {
     private const string ApiKey = "xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"; // Your API key here
-    private const string BaseUri = "https://api.pdfrest.com";
+    // By default, we use the US-based API service. This is the primary endpoint for global use.
+    private const string BaseUri ="https://api.pdfrest.com";
+
+    // For GDPR compliance and enhanced performance for European users, you can switch to the EU-based service by uncommenting the URL below.
+    // For more information visit https://pdfrest.com/pricing#how-do-eu-gdpr-api-calls-work
+    //private const string BaseUri = "https://eu-api.pdfrest.com";
+  
 
     public static async Task Main(String[] args)
     {
