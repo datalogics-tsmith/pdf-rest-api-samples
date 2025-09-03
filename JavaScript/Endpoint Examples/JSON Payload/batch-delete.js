@@ -1,11 +1,15 @@
 const axios = require("axios");
 
+// US endpoint: https://api.pdfrest.com
+// EU endpoint: https://api.eu.pdfrest.com
+var api_url = "https://api.pdfrest.com";
+
 let config = {
   method: "post",
   maxBodyLength: Infinity,
-  url: "https://api.pdfrest.com/delete",
+  url: api_url + "/delete",
   headers: {
-    "api-key": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "api-key": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", // Replace with your API key
     "Content-Type": "application/json",
   },
   data: {
@@ -14,6 +18,7 @@ let config = {
   },
 };
 
+// send request and handle response or error
 axios
   .request(config)
   .then((response) => {
